@@ -1,7 +1,7 @@
-#foot{
+#foot {
     margin-top: 10px;
-    background-color: rgb(24, 24, 24);
-    padding:10px ;
+    background-color: rgb(32, 32, 32);
+    padding: 10px;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -9,16 +9,30 @@
     justify-content: space-between;
 }
 
-.foot-div{
+#end{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    font: 600;
+    font-family: "Alegreya Sans SC";
+    text-align: center;
+}
+
+.foot-div {
+    width: 250px;
     text-align: left;
     font-size: 2.5vh;
 }
 
-.heading3{
+.heading3 {
     font-family: "Amaranth";
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
-#block3{
+#block3 {
     text-align: right;
+}
+
+#btnarray img{
+    height: 25px;
 }
