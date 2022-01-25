@@ -48,3 +48,7 @@
 #btnarray img{
     height: 25px;
 }
+
+#contact-bar input{
+    border-radius: 0px;
+}
