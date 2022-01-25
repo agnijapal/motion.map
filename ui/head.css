@@ -9,10 +9,6 @@
     margin: 10px;
 }
 
-#logo{
-    /* border: red 2px solid; */
-}
-
 #logo img{
     height: 100px;  /*height of the image*/
     background-color: white;
