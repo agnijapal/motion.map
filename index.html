@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Motion Data Sheet</title>
+    <link rel="stylesheet" href="/ui/head.css">
+    <link rel="stylesheet" href="/ui/desc.css">
+    <link rel="stylesheet" href="/ui/foot.css">
+    <link rel="stylesheet" href="/ui/parameter.css">
+    <link rel="stylesheet" href="/ui/output.css">
+    <link rel="stylesheet" href="/ui/console.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="/asset/vid_Trim.mp4" type="video/mp4">
+    </video>
+
+    <datalist id="props">
+        <option value="u = Primary Velocity" />
+        <option value="v = Final Velocity" />
+        <option value="a = Acceleration" />
+        <option value="t = Time" />
+    </datalist>
+
+    <datalist id="units">
+        <option value="m/s (SI)">
+        <option value="m/s^2 (SI)">
+        <option value="cm/s(CGS)">
+        <option value="cm/s^2(CGS)">
+        <option value="s (SI,CGS)">
+    </datalist>
+
+    <div id="head">
+        <div id="logo">
+            <img src="/asset/app_logo.png">
+        </div>
+        <div id="name">
+            <div>The Motion Map</div>
+            <div id="sub-name">Linear Motion Properties Calculator App by AGNI TECHNOLOGIES</div>
+        </div>
+    </div>
+
+    <div id="desc">
+        <div id="left" align=justify>
+            This is a Calculating Site with built in Physics Engine. By this page you can calculate linear motion
+            properties of an object. The site supports <b>CONSTANT Acceleration Value</b>. In case of no Acceleration
+            the Value
+            of a is 0.
+        </div>
+    </div>
+
+    <div id="parameters">
+        <div class="param-block">
+            <div id="heading1">Object Properties During Linear Motion</div>
+            <div id="heading2">*Constant Acceleration(a = 0 for no acc)</div>
+            <div id="prop">u = Primary Velocity</div>
+            <div id="prop">v = Final Velocity</div>
+            <div id="prop">a = Acceleration</div>
+            <div id="prop">t = Time</div>
+        </div>
+
+        <div class="param-block">
+            <div id="heading1">Units in S.I.</div>
+            <div id="heading2">Units : Meter(m), Second(s) </div>
+            <div id="prop">u = m/s </div>
+            <div id="prop">v = m/s </div>
+            <div id="prop">a = m/s^2</div>
+            <div id="prop">t = s </div>
+        </div>
+
+        <div class="param-block">
+            <div id="heading1">Units in C.G.S.</div>
+            <div id="heading2">Units : Centimeter(cm), Second(s) </div>
+            <div id="prop">u = cm/s </div>
+            <div id="prop">v = cm/s </div>
+            <div id="prop">a = cm/s^2</div>
+            <div id="prop">t = s</div>
+        </div>
+    </div>
+
+    <div id="console">
+        <div class="console-block" id="list">
+            <div class="datalist" id="label-in">
+                Select the Properties
+                <input list="props" id="label1">
+                <input list="props" id="label2">
+                <input list="props" id="label3">
+            </div>
+
+            <div class="datalist" id="data-in">
+                Enter the Values
+                <input type="number" id="data1">
+                <input type="number" id="data2">
+                <input type="number" id="data3">
+            </div>
+
+            <!-- EXPERIMENTAL STAGE -->
+            <div class="datalist" id="unit-in">
+                Units
+                <input list="units" id="unit1">
+                <input list="units" id="unit2">
+                <input list="units" id="unit3">
+            </div>
+            <!-- EXPERIMENTAL STAGE -->
+        </div>
+
+        <div class="console-block" id="buttons">
+            <div id="unitselector">
+                <div>Select Unit</div>
+                <div id="radio">
+                    <label for="si">S.I.</label>
+                    <input type="radio" id="si" name="select-unit" value="SI">
+
+                    <label for="cgs">C.G.S.</label>
+                    <input type="radio" id="cgs" name="select-unit" value="CGS">
+                </div>
+
+            </div>
+            <div id="btn-div">
+                <button id="calculate" class="btn">Calculate Values</button>
+                <button id="reset" class="btn">Reset All Values</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="output">
+        <div class="output-div" id="result">
+            <div id="names">
+                <div>Primary Velocity (u)   </div> 
+                <div>Final Velocity (v)     </div>
+                <div>Acceleration (a)       </div>
+                <div>Time of Motion (t)     </div>
+                <div>Displacement (s) </div>
+            </div>
+            <div>
+                <div id="u">u</div>
+                <div id="v">v</div>
+                <div id="a">a</div>
+                <div id="t">t</div>
+                <div id="s">s</div>
+            </div>
+        </div>
+
+        <div class="output-div" id="graph">
+            <div class="g-gen" id="g1"></div>
+            graph : v vs t
+        </div>
+
+        <div class="output-div" id="graph">
+            <div class="g-gen" id="g2"></div>
+            graph : s vs t
+        </div>
+    </div>
+
+    <div id="foot">
+        <div class="foot-div" id="block1">
+            <div class="head">About</div>
+            This is a page <br>
+            to calculate the motion properties
+        </div>
+
+        <div class="foot-div" id="block2">
+            <div class="head">Our Products</div>
+            Covid Line(Beta) <br>
+            Triangle Geometry(Beta)
+        </div>
+
+        <div class="foot-div" id="block3">
+            <div class="head">Contacts</div>
+        </div>
+    </div>
+</body>
+
+</html>

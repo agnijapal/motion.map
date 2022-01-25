@@ -1,0 +1,34 @@
+#head{
+    display: flex;
+    background-color: rgb(137, 124, 255);
+    border-radius: 10px;
+    align-items: center;    /*aligning the logo and name vertical center*/
+    padding: 5px;   /*padding to center the logo and the name*/
+    border-bottom-right-radius: 200px;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+#logo{
+    /* border: red 2px solid; */
+}
+
+#logo img{
+    height: 100px;  /*height of the image*/
+    background-color: white;
+    border-radius: 50%;
+    border: white solid 10px;
+}
+
+#name{
+    /* border: rgb(34, 0, 255) 2px solid; */
+    font-family: "Titillium Web";
+    font-weight: 900;
+    font-size: 12vh;    /*font size in view port for responsive design*/
+    margin: 0px;
+    padding-left: 10px;
+}
+
+#sub-name{
+    font-size: 5vh;
+}

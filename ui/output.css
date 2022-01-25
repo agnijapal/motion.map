@@ -1,0 +1,36 @@
+body{
+    margin:auto;
+}
+#output{
+    padding: 20px;
+    font-family: "Inter";
+    font-size: 3vh;
+    font-weight: 600;
+    display: flex;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: rgb(9, 255, 0);
+}
+
+.output-div{
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#result{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#graph{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.g-gen{
+    height: 200px;
+    width: 200px;
+}

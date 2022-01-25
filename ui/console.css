@@ -1,0 +1,108 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#console {
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 5px;
+}
+
+.console-block {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(255, 157, 0);
+    font-size: 4vh;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+}
+
+.datalist {
+    /* border: rgb(0, 0, 0) 2px solid; */
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 250px;
+}
+
+#unit-in{
+    width: 100px;
+}
+input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#unitselector {
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+#btn-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-family: "Rubik";
+    font-size: 4vh;
+    color: white;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px;
+    margin-bottom: 10px;
+}
+
+#buttons{
+    background-color: transparent;
+}
+#calculate {
+    background-color: green;
+    color: white;
+    box-shadow: 5px 5px rgb(156, 255, 44);
+    border: green 2px solid;
+}
+
+#calculate:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+
+#reset {
+    border: red 2px solid;
+    background-color: red;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px rgb(255, 111, 0);
+}
+
+#reset:hover {
+    background-color: white;
+    border: red 2px solid;
+    color: red;
+}

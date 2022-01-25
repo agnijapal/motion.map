@@ -1,0 +1,18 @@
+#parameters{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.param-block{
+    width: 60vh;
+    font-size: 3vh;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(0, 17, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
