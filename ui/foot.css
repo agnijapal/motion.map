@@ -31,6 +31,8 @@
     border-radius: 5px;
 }
 .foot-div {
+    padding: 5px;
+    border: white solid 2px;
     width: 250px;
     text-align: left;
     font-size: 2.5vh;
@@ -47,8 +49,4 @@
 
 #btnarray img{
     height: 25px;
-}
-
-#contact-bar input{
-    border-radius: 0px;
 }
