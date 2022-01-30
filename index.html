@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="ui/foot.css">
     <link rel="stylesheet" href="ui/parameter.css">
     <link rel="stylesheet" href="ui/output.css">
+    <link rel="stylesheet" href="ui/nav.css">
     <link rel="stylesheet" href="ui/console.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
@@ -45,16 +46,28 @@
         </div>
         <div id="name">
             <div>The Motion Map</div>
-            <div id="sub-name">Linear Motion Properties Calculator App by AGNI TECHNOLOGIES</div>
+            <div id="sub-name">Generate Graph of an object in linear motion with const. Acceleration</div>
         </div>
     </div>
 
+    <nav class="navbar" id="home">
+        <div class="nav-list">
+            <div class="button"><a href="#home"> Home </a></div>
+            <div class="button"><a href="#about"> About </a></div>
+            <div class="button"><a href="#left"> Services </a></div>
+            <div class="button"><a href="#about"> Contact Us </a></div>
+        </div>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
     <div id="desc">
         <div id="left" align=justify>
-            This is a Calculating Site with built in Physics Engine. By this page you can calculate linear motion
-            properties of an object. The site supports <b>CONSTANT Acceleration Value</b>. In case of no Acceleration
-            the Value
-            of a is 0.
+            Enter the motion properties and the values of an object to see the Graphical representation of the object during the motion. Here is a Magic... You have to give any 3 data from Primary Velocity(u), Final Velocity(v) , Time(t) and Acceleration(a). This automatically calculate the 4rth Property and show you the Graphical Representation. You also can access these in any supported Units like SI and CGI (Till now available).
         </div>
     </div>
 
@@ -151,7 +164,7 @@
         </div>
     </div>
 
-    <div id="foot">
+    <div class="foot" id="about">
         <div class="foot-div" id="block1">
             <div class="heading3">About</div>
             <br>
@@ -165,10 +178,8 @@
             Agnija Pal - Web Developer
         </div>
         <div class="foot-div" id="block2">
-            <div class="heading3">Our Products</div>
-            <!-- <br>
-            Covid Line(Beta) <br>
-            Triangle Geometry(Beta) -->
+            <div class="heading3">More From Us</div>
+            <br><a href="#">Our Blog</a>
         </div>
 
         <div class="foot-div" id="block3">

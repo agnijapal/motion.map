@@ -1,4 +1,4 @@
-#foot {
+.foot {
     margin-top: 10px;
     background-color: rgb(32, 32, 32);
     padding: 10px;
@@ -49,4 +49,9 @@
 
 #btnarray img{
     height: 25px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
 }

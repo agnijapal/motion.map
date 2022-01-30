@@ -41,6 +41,10 @@
     width: 250px;
 }
 
+.datalist input{
+    background-color: rgb(255, 255, 93);
+}
+
 #unit-in{
     width: 100px;
 }
